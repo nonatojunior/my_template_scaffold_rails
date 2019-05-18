@@ -1,0 +1,349 @@
+pt-BR:
+  User: 'Usuário'
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names:
+    - Domingo
+    - Segunda
+    - Terça
+    - Quarta
+    - Quinta
+    - Sexta
+    - Sábado
+    formats:
+      default: ! '%d/%m/%Y h:m h'
+      long: ! '%d de %B de %Y'
+      long_week: ! '%A, %d de %B de %Y'
+      month_name: ! '%B'
+      short: ! '%d de %B'
+      short2: ! '%d %b'
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: aproximadamente %{count} meses
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: aproximadamente %{count} anos
+      almost_x_years:
+        one: quase 1 ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: mais de 1 ano
+        other: mais de %{count} anos
+      x_days:
+        one: 1 dia
+        other: ! '%{count} dias'
+      x_minutes:
+        one: 1 minuto
+        other: ! '%{count} minutos'
+      x_months:
+        one: 1 mês
+        other: ! '%{count} meses'
+      x_seconds:
+        one: 1 segundo
+        other: ! '%{count} segundos'
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      invalid_field: 'Favor verifique o(s) seguinte(s) campo(s): %{campos}'
+      destroy_exception: Não foi possível apagar.
+      accepted: deve ser aceito.
+      blank: não pode ficar em branco
+      confirmation: não está de acordo.
+      empty: não pode ficar vazio.
+      equal_to: deve ser igual a %{count}.
+      even: deve ser par.
+      exclusion: não está disponível.
+      greater_than: deve ser maior que %{count}.
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}.
+      inclusion: não está incluído na lista.
+      invalid: campo inválido.
+      less_than: deve ser menor que %{count}.
+      less_than_or_equal_to: deve ser menor ou igual a %{count}.
+      not_a_number: não é um número.
+      not_an_integer: não é um número inteiro.
+      odd: deve ser ímpar.
+      record_invalid: ! 'A validação falhou: %{errors}'
+      taken: já existente no sistema.
+      too_long: ! 'é muito longo (máximo: %{count} caracteres)'
+      too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
+      wrong_length: não possui o tamanho esperado (%{count} caracteres).
+    template:
+      body: ! 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      header:
+        one: ! 'Não foi possível gravar %{model}: 1 erro'
+        other: ! 'Não foi possível gravar %{model}: %{count} erros.'
+  condicao:
+    sim: "sim"
+    nao: "não"
+  success:
+    save: "Salvo com sucesso."
+  helpers:
+    actions: "Ações"
+    links:
+      edit: "Editar"
+      back: "Voltar"
+      cancel: "Cancelar"
+      confirm: "Tem certeza que deseja apagar este registro?"
+      destroy: "Apagar"
+      new: "Novo"
+      show: "Informações"
+      detail: "Detalhe"
+    titles:
+      edit: "Editar %{model}"
+      save: "Salvar %{model}"
+      new: "Inserir %{model}"
+      create: "Inserir %{model}"
+      delete: "Apagar %{model}"
+      modal:
+        details: 'Detalhe'
+        version: 'Versão'
+    select:
+      prompt: Por favor selecione
+      no_one: "Nenhum registro foi encontrado."
+    submit:
+      create: Criar
+      submit: Salvar
+      update: Atualizar
+    label:
+      user:
+        email: 'Email'
+        password: 'Senha'
+        password_confirmation: 'Confirmação de Senha'
+        current_password: 'Senha Atual'
+      uf:
+        nome: 'Nome'
+        sigla: 'Sigla'
+      defesa_previa_lei:
+        descricao: 'Descrição'
+        numero: 'Número'
+      defesa_previa_artigo:
+        descricao: 'Descrição'
+        codigo: 'Código'
+        lei_id: 'Lei'
+      defesa_previa_inciso:
+        descricao: 'Descrição'
+        codigo: 'Código'
+        artigo_id: 'Artigo'
+      defesa_previa_alinea:
+        descricao: 'Descrição'
+        codigo: 'Código'
+        descricao_completa: 'Descrição completa'
+      campo_calculado:
+        quantidade_cargo_contratado: Contratado
+        quantidade_cargo_disponivel: Disponível
+        
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Sem %{entry_name} encontrados"
+          one: "Mostrando 1 %{entry_name}"
+          other: "Mostrando todos %{count} %{entry_name}"
+      more_pages:
+        display_entries: "<p class='text-muted'>Mostrando %{first}-%{last} de %{total}</p>"
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: ! '%u %n'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+    format:
+      delimiter: .
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: .
+        precision: 2
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: 'Byte'
+            other: 'Bytes'
+          gb: 'GB'
+          kb: 'KB'
+          mb: 'MB'
+          tb: 'TB'
+    percentage:
+      format:
+        delimiter: .
+    precision:
+      format:
+        delimiter: .
+  support:
+    array:
+      last_word_connector: ! ' e '
+      two_words_connector: ! ' e '
+      words_connector: ! ', '
+  time:
+    am: ''
+    formats:
+      default: ! '%d/%m/%Y, %H:%M:%S'
+      long: ! '%d de %B de %Y, %H:%M'
+      medium: ! '%d/%m/%Y %H:%M'
+      time: ! '%H:%M'
+      short: ! '%d de %B, %H:%M'
+    pm: ''
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  system:
+    initials: 'TP - Template Detran'
+    name: 'Sistema template padrão Detran'
+    version: 'v0.0.1'
+    indentifique: 'Identifique-se'
+    entries: 'Cadastros'
+    password: 'Senha'
+    company: 'Departamento Estadual de Trânsito - DETRAN-CE'
+    address: ' - Sede: Av. Godofredo Maciel, 2900 - Maraponga - Fortaleza/Ce CEP: 60.710-903'
+    contact: 'suporte aos sistemas:  (85) 3101.5820 ou 3101.5887 | DETRAN: 0800 275 6768 / Perícia: 154 - CNPJ: 07.135.668/0001-95'
+    copyright: '© 2011 - Governo do Estado do Ceará. Todos os direitos reservados.'
+    message:
+      not_permission: 'Usuário não possui permissão para acessar essa área:'
+    tab:
+      envolvidos: 'Envolvidos'
+      bases: 'Bases'
+      sectors: 'Setores'
+      lotacao_empresa: 'Empresa Lotação'
+      versions: 'Versões'
+  messages:
+    cadastro_sucesso: 'Registro incluído com sucesso.'
+    delecao_sucesso: 'Registro excluído com sucesso.'
+    atualizado_sucesso: 'Registro alterado com sucesso.'
+    inatividade: ''
+    associado_sucesso: 'Registro associado com sucesso.'
+    associacao_existente: '%{model} existente.'
+    delecao_erro: 'Não foi possível excluir o registro.'
+    cpf_cadastrado: "CPF já Cadastrado"
+    atualizado_erro: Erro ao atualizar registro.
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      required: 'Obrigatório'
+      user:
+        not_found: 'Usuário não encontrado.'
+      messages:
+        record_invalid: "A validação falhou: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Não é possível excluir este registro, pois existe %{record} relecionado(a)."
+          has_many: "Não é possível excluir este registro, pois existem %{record} relacionados(as)."
+        required: deve existir
+    models:
+      pessoa: 'Pessoa'
+    attributes:
+      pessoa:
+        cpf: CPF
+        usuario: 'Usuário'
+        email_pessoal: 'E-mail'
+        data_contratacao: 'Data Contratação'
+        nome_pai: 'Nome do Pai'
+        nome_mae: 'Nome da Mãe'
+        Estado_civil: 'Estado Civil'
+        conjuge: 'Cônjuge'
+        profissao: 'Profissão'
+        data_nascimento: 'Data Nascimento'
+        naturalidade: 'Naturalidade'
+        Uf: 'Uf'
+        tipo_sanguineo: 'Tipo Sanguineo'
+        numero: 'Número'
+        ctps: 'CTPS'
+        serie: 'Série'
+        emissao: 'Emissão'
+        certificado_militar: 'Certificado Militar'
+        emissor_militar: 'Orgão Emissor'
+        titulo_eleitoral: 'Título Eleitoral'
+        secao: 'Seção'
+        cidade_eleitoral: 'Cidade Eleitoral'
+        estado_eleitoral: 'Estado Eleitoral'
+        agencia: 'Agência'
+        conta_corrente: 'Conta Corrente'
+  views:
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
+      truncate: "&hellip;"

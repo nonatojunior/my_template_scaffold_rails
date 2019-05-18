@@ -1,0 +1,47 @@
+<%% content_for :title do %>
+  <%%= t('.title', default: @<%= singular_table_name %>.class.model_name.human ) %>
+<%% end -%>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <h5><%%= t('.title', default: @<%= singular_table_name %>.class.model_name.human ) %></h5>
+        <div class="ibox-tools">
+          <a class="collapse-link">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+          <a class="close-link">
+            <i class="fa fa-times"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ibox-content">
+        <div class="row">
+          <div class="col-sm-12 b-r">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <% attributes.each do |attribute| -%>
+                  <% singular_table_name_new = "" %>
+                  <% singular_table_name.split('_').each {|e| singular_table_name_new.concat(e.capitalize)} %>
+                  <th><%%= <%= singular_table_name_new %>.human_attribute_name :<%= attribute.name %> %></th>
+                  <% end -%>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <% attributes.each do |attribute| -%>
+                  <td style="min-width: 90px; word-break: break-all;"><%%= @<%= singular_table_name %>.<%= attribute.name %> %></td>
+                  <% end -%>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%%= link_to('Listar', <%= plural_table_name %>_path, class: 'btn btn-default') %>
+<%%= link_to 'Editar', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-success' %>
