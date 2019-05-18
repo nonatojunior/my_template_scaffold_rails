@@ -15,3 +15,5 @@
 ### Dentro do repositório https://github.com/nonatojunior/my_template_scaffold_rails você encontrará um diretório locates com o arquivo **pt-BR.yml** este arquivo deverá ser clonado dentro do diretório **/config/locates** do seu projeto, pois este arquivo fará a tradução dos models e atributos gerados pelo comando scaffold.
 
 ### Você verá também o arquivo initializers/inflactions.rb, este arquivo é responsável pela pluralização e singularização dos arquivos.
+
+### A pasta **helpers** possui alguns métodos pré definidos.
